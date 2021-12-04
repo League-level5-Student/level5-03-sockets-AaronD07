@@ -14,7 +14,7 @@ public class ClientGreeter {
       String address = JOptionPane.showInputDialog("Enter your ip address");
       //2. Create an integer for the server's port number
       String portS = JOptionPane.showInputDialog("Enter your port #");
-      int port = 63500;
+      int port = Integer.parseInt(portS);
       //3. Surround steps 4-9 in a try-catch block that catches any IOExceptions.
     try {
     	 //4. Create an object of the Socket class. When initializing the object, pass in the ip address and the port number
